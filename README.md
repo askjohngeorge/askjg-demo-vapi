@@ -6,6 +6,10 @@ This repository contains the necessary files to set up a Vapi lead qualfication 
 
 1. Clone this repository to your local machine.
 
+   ```
+   git clone https://github.com/askjohngeorge/askjg-demo-vapi.git
+   ```
+
 2. Make sure you have Python 3.7+ installed on your system.
 
 3. Install the required dependencies:
