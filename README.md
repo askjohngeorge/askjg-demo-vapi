@@ -62,4 +62,10 @@ The Google Apps Script tool performs two main functions:
 
 Once set up, the Vapi assistant will handle calls and extract relevant data. After each call, the Google Apps Script will automatically log the data to your specified Google Sheet and send a summary email to the recipient email address.
 
-For any issues or questions, please refer to the Vapi documentation or contact support.
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Disclaimer
+
+This project is not officially affiliated with, authorized, maintained, sponsored or endorsed by Vapi or any of its affiliates or subsidiaries. This is an independent and unofficial software. Use at your own risk.
