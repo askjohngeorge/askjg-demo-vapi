@@ -33,7 +33,7 @@ This repository contains the necessary files to set up a Vapi lead qualfication 
 The Google Apps Script tool performs two main functions:
 
 1. Logs extracted call data to a Google Sheet
-2. Sends a formatted email with call details
+2. Sends you a formatted email with call details
 
 ### Setting up the Google Apps Script
 
