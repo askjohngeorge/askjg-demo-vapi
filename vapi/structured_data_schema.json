@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "properties": {
+    "Budget": {
+      "description": "Extract the indicated budget, whether as a range or specific amount.",
+      "type": "string"
+    },
+    "Use case": {
+      "description": "Identify the specific purpose for the voice AI assistant",
+      "type": "string"
+    },
+    "Full name": {
+      "description": "Extract as stated or pieced together from first and last name.",
+      "type": "string"
+    },
+    "Timescale": {
+      "description": "Extract the timescale for delivery of the voice AI assistant.",
+      "type": "string"
+    },
+    "Discovery preference": {
+      "description": "Determine if the caller chose to set up a discovery video conference or send an email. Extract the specific preference as either \"video conference\" or \"email\". If the caller didn't make a clear choice or declined both options, use null.",
+      "type": "string"
+    }
+  }
+}

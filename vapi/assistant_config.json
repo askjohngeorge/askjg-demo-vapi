@@ -1,0 +1,48 @@
+{
+  "name": "AskJG Lead Qualifier Template",
+  "voice": {
+    "voiceId": "JBFqnCBsd6RMkjVDRZzb",
+    "provider": "11labs",
+    "stability": 0.6,
+    "similarityBoost": 0.75,
+    "fillerInjectionEnabled": false,
+    "optimizeStreamingLatency": 4
+  },
+  "model": {
+    "model": "gpt-4o",
+    "messages": [
+      {
+        "role": "system",
+        "content": "file:///system_prompt.txt"
+      }
+    ],
+    "provider": "openai",
+    "temperature": 0.1
+  },
+  "firstMessage": "file:///first_message.txt",
+  "endCallFunctionEnabled": true,
+  "endCallMessage": "",
+  "transcriber": {
+    "model": "nova-2",
+    "language": "en",
+    "provider": "deepgram"
+  },
+  "silenceTimeoutSeconds": 26,
+  "clientMessages": ["tool-calls"],
+  "serverMessages": ["end-of-call-report"],
+  "responseDelaySeconds": 0.7,
+  "llmRequestDelaySeconds": 0,
+  "maxDurationSeconds": 300,
+  "analysisPlan": {
+    "summaryPrompt": "file:///summary_prompt.txt",
+    "structuredDataPrompt": "file:///structured_data_prompt.txt",
+    "structuredDataSchema": "file:///structured_data_schema.json",
+    "successEvaluationPrompt": "file:///success_evaluation_prompt.txt",
+    "successEvaluationRubric": "PassFail"
+  },
+  "backgroundDenoisingEnabled": true,
+  "messagePlan": {
+    "idleMessageMaxSpokenCount": 4,
+    "idleTimeoutSeconds": 6
+  }
+}

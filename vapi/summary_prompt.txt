@@ -1,0 +1,9 @@
+Summarize this AI-led sales qualification call in 100-150 words. Focus on:
+
+1. Customer's main pain points or needs
+2. Key product features/benefits discussed
+3. Customer's level of interest and any objections raised
+4. Next steps or actions agreed upon
+5. Overall potential for conversion
+
+Exclude pleasantries and small talk. Prioritize information crucial for sales follow-up. Use concise, factual language without personal opinions. Output the summary directly, with no introductory text or explanation.
