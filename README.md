@@ -1,4 +1,4 @@
-# Vapi Assistant Setup
+# Voice AI Solutions Lead Qualification Template
 
 This repository contains the necessary files to set up a Vapi lead qualfication assistant template for voice AI solutions and a Google Apps Script tool for logging call data.
 
