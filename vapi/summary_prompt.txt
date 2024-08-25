@@ -6,4 +6,4 @@ Summarize this AI-led sales qualification call in 100-150 words. Focus on:
 4. Next steps or actions agreed upon
 5. Overall potential for conversion
 
-Exclude pleasantries and small talk. Prioritize information crucial for sales follow-up. Use concise, factual language without personal opinions. Output the summary directly, with no introductory text or explanation.
+Exclude pleasantries and small talk. Prioritize information crucial for sales follow-up. Use concise, factual language without personal opinions. Output the summary directly, with no introductory text or explanation. If there is not enough information to make a summary, use null.

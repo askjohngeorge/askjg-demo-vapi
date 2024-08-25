@@ -45,7 +45,9 @@ function processJsonData(jsonData) {
 }
 
 function sendFormattedEmail(data) {
-  const subject = `AskJG VapiWidget Call Report: ${data.fullName} - ${data.useCase}`;
+  const subject = `AskJG VapiWidget Call Report: ${
+    data.fullName ?? "Unknown Caller"
+  } ${data.useCase ? " - " + data.useCase : ""}`;
   const body = createEmailBody(data);
 
   MailApp.sendEmail({
@@ -75,14 +77,18 @@ function createEmailBody(data) {
           <tr><th>Duration</th><td>${data.durationMinutes.toFixed(
             2
           )} minutes (${data.durationSeconds} seconds)</td></tr>
-          <tr><th>Full Name</th><td>${data.fullName}</td></tr>
-          <tr><th>Use Case</th><td>${data.useCase}</td></tr>
-          <tr><th>Timescale</th><td>${data.timescale}</td></tr>
-          <tr><th>Budget</th><td>${data.budget}</td></tr>
-          <tr><th>Discovery Preference</th><td>${
-            data.discoveryPreference
+          <tr><th>Full Name</th><td>${
+            data.fullName ?? "Unknown Caller"
           }</td></tr>
-          <tr><th>Call Summary</th><td>${data.callSummary}</td></tr>
+          <tr><th>Use Case</th><td>${data.useCase ?? "N/A"}</td></tr>
+          <tr><th>Timescale</th><td>${data.timescale ?? "N/A"}</td></tr>
+          <tr><th>Budget</th><td>${data.budget ?? "N/A"}</td></tr>
+          <tr><th>Discovery Preference</th><td>${
+            data.discoveryPreference ?? "N/A"
+          }</td></tr>
+          <tr><th>Call Summary</th><td>${
+            data.callSummary !== "null" ? data.callSummary : "N/A"
+          }</td></tr>
           <tr><th>Formatted Transcript</th><td><pre>${
             data.formattedTranscript
           }</pre></td></tr>
