@@ -41,7 +41,7 @@ The Google Apps Script tool performs two main functions:
 
 2. Create a new project
 
-3. Copy the contents of `google_apps_script.js` into the script editor
+3. Copy the contents of `end-of-call-report-logger.js` into the script editor
 
 4. Replace the placeholder values in the script:
    - `SPREADSHEET_ID`: The ID of your Google Sheet (found in the URL)
