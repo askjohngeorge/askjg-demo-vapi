@@ -33,6 +33,7 @@
   "responseDelaySeconds": 0.7,
   "llmRequestDelaySeconds": 0,
   "maxDurationSeconds": 300,
+  "backchannelingEnabled": false,
   "analysisPlan": {
     "summaryPrompt": "file:///summary_prompt.txt",
     "structuredDataPrompt": "file:///structured_data_prompt.txt",
@@ -44,5 +45,8 @@
   "messagePlan": {
     "idleMessageMaxSpokenCount": 4,
     "idleTimeoutSeconds": 6
+  },
+  "startSpeakingPlan": {
+    "smartEndpointingEnabled": true
   }
 }
